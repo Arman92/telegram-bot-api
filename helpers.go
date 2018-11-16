@@ -365,10 +365,10 @@ func NewChatAction(chatID int64, action string) ChatActionConfig {
 	}
 }
 
-// NewUserProfilePhotos gets user profile photos.
+// NewUserProfilePhotosConfig gets user profile photos.
 //
 // userID is the ID of the user you wish to get profile photos from.
-func NewUserProfilePhotos(userID int) UserProfilePhotosConfig {
+func NewUserProfilePhotosConfig(userID int) UserProfilePhotosConfig {
 	return UserProfilePhotosConfig{
 		UserID: userID,
 		Offset: 0,
