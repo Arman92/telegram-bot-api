@@ -453,7 +453,7 @@ func TestSendEditMessage(t *testing.T) {
 func TestGetUserProfilePhotos(t *testing.T) {
 	bot, _ := getBot(t)
 
-	_, err := bot.GetUserProfilePhotos(tgbotapi.NewUserProfilePhotos(ChatID))
+	_, err := bot.GetUserProfilePhotos(tgbotapi.NewUserProfilePhotosConfig(ChatID))
 	if err != nil {
 		t.Error(err)
 		t.Fail()
